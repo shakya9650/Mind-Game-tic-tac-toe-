@@ -1,0 +1,91 @@
+/* now remove the li item dot bythis  */
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+    background-color: aqua;
+    color:black;
+    height: 60px;
+   font-size: 30px;
+   display: flex;
+   align-items: center;
+   padding: 0px 30px;
+  
+}
+.gamecontainer{
+    /* background-color:rgb(211, 186, 240); */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+/* now making the grid by 3*3 grid template columns and rows property */
+.container{
+    display: grid;
+    grid-template-columns: repeat(3 ,10vw);
+    grid-template-rows: repeat(3 ,10vw);
+}
+/* now give the border of grid */
+.box{
+    border: 2px solid black;
+    font-size: 9vw;
+    /* font size always uses in vw because it help to resposive ness  */
+    /* cursor: pointer; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: blanchedalmond;
+}
+nav ul{
+    list-style-type: none;  /*this is remove ul dot */
+}
+
+
+.gameinfo{
+    padding: 0px 30px;
+    font-style: italic;
+}
+/* 
+hide the animation because i"m using when user win the game; */
+/* .imgbox{
+    width: 0;
+    transition: 1s ease-in-out;
+} */
+/* now making actual position of tic tac */
+
+
+
+/* making this types of interface making by display none property
+  making as it by using border property */
+
+/*   __|___|___
+     __|___|___
+       |   |      
+       make the class by top left botton right,  */
+
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+
+#reset{
+    margin: 30px 20px;
+    padding: 20;
+    width: 70px;
+    height: 30px;
+    color: white;
+    background-color: blue;
+    
+}
